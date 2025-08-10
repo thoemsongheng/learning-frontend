@@ -1,2 +1,5 @@
 # learning-frontend
-Just a repo to put all small thing I learn about basic frontend HTML, CSS, JAVASCRIPT.
+A repo of my collection of things (cool and not so cool) I learn about web frontend and design... with HTML, CSS, JAVASCRIPT.
+
+**List of Thing I've learn**
+- [x] Window glowing border effect.
