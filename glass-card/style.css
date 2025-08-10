@@ -1,0 +1,95 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('assets/gradient.png');
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card {
+  width: 600px;
+  min-height: 300px;
+  border-radius: 20px;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 8px;
+}
+
+
+.header {
+  border-bottom: 1px solid white;
+  margin-bottom: 8px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.content > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ref-box {
+  margin: 0;
+  padding: 4px 8px;
+  background-color: rgb(13, 0, 40);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer {
+  background-color: rgb(13, 0, 40);
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > p > span {
+  color: rgb(37, 253, 181);
+}
+
+
+/* effect only */
+.card {
+  position: relative;
+  background: rgb(34, 0, 57, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  border: 1px solid transparent;
+  background: linear-gradient(rgb(200, 200, 200), rgb(247, 247, 255)) border-box;
+  mask: linear-gradient(black) border-box, linear-gradient(black) padding-box;
+  mask-composite: subtract;
+}

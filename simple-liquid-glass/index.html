@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <svg style="display: none">
+          <filter id="displacementFilter">
+            <feTurbulence
+              type="turbulence"
+              baseFrequency="0.1"
+              numOctaves="2"
+              result="turbulence"
+            />
+
+            <feDisplacementMap
+              in="SourceGraphic"
+              in2="turbulence"
+              scale="20"
+              xChannelSelector="R"
+              yChannelSelector="G"
+            />
+          </filter>
+        </svg>
+        <div class="icon-container">
+          <div class="icon">
+            <img
+              width="144"
+              height="144"
+              src="https://img.icons8.com/color/144/youtube-squared.png"
+              alt="youtube-squared"
+            />
+          </div>
+
+          <div>
+            <img
+              width="144"
+              height="144"
+              src="https://img.icons8.com/color/144/youtube-squared.png"
+              alt="youtube-squared"
+            />
+          </div>
+          <div>
+            <img
+              width="144"
+              height="144"
+              src="https://img.icons8.com/color/144/youtube-squared.png"
+              alt="youtube-squared"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
